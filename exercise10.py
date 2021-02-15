@@ -18,16 +18,14 @@ for name in glob.glob(pattern):
     print(name + " is the size " + str(os.path.getsize(name)))
 
 # TODO: Add a test to only display files that are not zero length
-file_size = os.path.getsize(name)
-if file_size > 0:
-    print(name + "is bigger than zero.")
-
-# to be continued .... maybe using a string test
+print("These are the files that are not zero length")
+for name in glob.glob(pattern):
+    file_size = os.path.getsize(name)
+    if file_size > 0:
+        print(name + "is bigger than zero.")
 
 # TODO: Remove the leading directory name(s) from each filename before you print it -
-basename = os.path.basename(name)
-print(basename)
-
-# to be continued 
-
-# using os.path.basename()
+print("These are the file names without the path name")
+for name in glob.glob(pattern):
+    basename = os.path.basename(name)
+    print(basename)

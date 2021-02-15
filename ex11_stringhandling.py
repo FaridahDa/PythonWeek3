@@ -7,14 +7,9 @@ print((len(Belgium)) * "-")
 Belgium_update = Belgium.replace(",", " : ")
 print(Belgium_update)
 
-Belgium_list = list(Belgium_update.split(","))
+Belgium_list = list(Belgium_update.split(":"))
 print(Belgium_list)
 
-Belgium_pop = Belgium_list[2]
-Brussel_pop = Belgium_list[6]
+Belgium_pop = int(Belgium_list[1])
+Brussel_pop = int(Belgium_list[3])
 print(Belgium_pop + Brussel_pop)
-
-# finish
-#convert string to list
-
-#print(Bel)

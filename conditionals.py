@@ -39,13 +39,13 @@ while line != 'done':
 
 #myl = [23, 67, 32, 77]
 #while myl:
-   # print(myl.pop(1))
+   #print(myl.pop(1))
 #why is 23 1 and why is the list printed on different lines
 
 #loop control statmement
 i = 1
 j = 120
-while i < 100 :
+while i < 120 :
     i = i * 2
     if i > j : break
 else:
@@ -59,9 +59,9 @@ for arg in sys.argv:
 
 #countingforloops
 some_list = [1, 2, 3, 4]
-for i in range(0, len(some_list)):
-#what is this line of code doing?    if some_list[i] > 3: some_list[i] += 1
-    print(some_list)
+#for i in range(0, len(some_list)):
+    #if some_list[i] > 3: some_list[i] += 1
+    #print(some_list)
 
 for i in range(0,len(some_list)) :
     print(some_list[i])

@@ -28,6 +28,7 @@ var1 = 01.05210002
 var2 = 3
 var3 = 1234236
 
-"text{0:5.3f}text{1:3.d}text{2}".format(var1, var2, var3)
+#need walk through to understand better
+print("text{0:5.3f}text{1:3d}text{2:f}".format(var1, var2, var3))
 
 

@@ -1,18 +1,17 @@
 supplied_pin = "7890"
-first_attempt = input("Enter your pin:")
-if supplied_pin == first_attempt:
-    print("Your pin was sucessful, Welcome")
-elif supplied_pin != first_attempt:
-    print("Your pin was wrong, you have 2 more attempts")
+attempt = 1
+while attempt < 4:
+    pin = input("Enter your pin:")
+    if pin == supplied_pin:
+        print("Your pin was successful, Welcome!")
+    else:
+        print("Your pin was incorrect, please try again." + "" + "You have tried" + str(attempt) + "" + "times")
+    attempt = attempt + 1
+    if attempt == 4:
+        print("Sorry you are now locked out")
 
-    second_attempt = input("Enter your pin")
-    if supplied_pin == second_attempt:
-        print("Your pin was sucessful, Welcome")
-    elif supplied_pin != second_attempt:
-        print("Your pin was wrong, you have one more attempt")
 
-        third_attempt = input("Enter your pin")
-        if supplied_pin == third_attempt:
-            print("Your pin was sucessful, Welcome")
-        else:
-            print("Your pin was wrong, you are now locked out")
+
+
+
+
